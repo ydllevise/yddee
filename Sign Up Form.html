@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title> Sign Up Form </title> 
+	<link rel="stylesheet" href="Login.css"> <!-- CSS call -->
+<body> <!-- start of body section -->
+<div class="border">
+<h2> Sign Up Form </h2> <!-- heading -->
+<form action="///C:/Users/USER/Desktop/HTML%20FILES/Activity%20%2310%20-%20Login%20Form%20-%20Belmonte,%20Chelsea%20Ydllevise%20M.html" method="post">
+<div class="container"> 
+	<label for="fname"><b> First Name: </b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required>
+	
+	<label for="lname"><b> Last Name: </b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required>
+	
+	<label for="email"><b> Email Address: </b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+	
+	<label for="username"> <b> Username </b> </label>
+		<input type='text' placeholder="Enter Username" id='username' name="username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+		title="Your username must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	
+	<label for="password"><b> Password </b></label>
+		<input type='text' placeholder="Enter Password" id='password' name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+		title="Your password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+	
+	<p><b> Gender: </b> <!-- for choosing gender -->
+		<input type='radio' name="gender" value ='Male'> Male
+		<input type='radio' name="gender" value ='Female'> Female
+	</p>
+	<!-- submit button -->
+	<button type="submit"> Submit </button>
+</div>
+</div>
+</body> <!-- end of body section -->
+</html>

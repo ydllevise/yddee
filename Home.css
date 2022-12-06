@@ -1,0 +1,341 @@
+
+body, html {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	background-image: url("phil.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	z-index: 1;
+	overflow-x: hidden;
+}
+
+img.logo1{
+	width: 50px;
+	height: auto;
+	margin-left: 15px;
+	margin-top: -10px;
+}
+
+img.logo2{
+	width: 210px;
+	height: 60px;
+	margin-top: -10px;
+}
+
+div.time { 
+	margin: 5px;
+	margin-top: -20px;
+    background: rgb(12, 12, 12);
+    color: #fff;
+    border: 2px solid rgb(255, 252, 252);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 8px;
+    text-align: center;
+    width: 200px;
+	float: right;
+	margin-right: 15px;
+}
+
+.hms {
+    font-size: 15px;
+    font-weight: 100px;
+}
+.ampm {
+    font-size: 15px;
+}
+.date {
+    font-size: 10px;
+}
+
+.header {
+	padding-top: 10px;
+	background-color: black;
+	height: 80px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 102px;
+}
+
+.sidebar {
+	padding: 5px;
+	width: 200px;
+	background-color: black;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	z-index: 1;
+	top: 90px;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 10px;
+}
+
+.sidebar a {
+	display: block;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+ 
+.sidebar a.active {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	padding: 10px;
+	margin-top:5px; 
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: white;
+	color: black;
+	padding-bottom: 5px;
+	padding: 10px;
+}
+
+div.fheader {
+	margin-left: 200px;
+	padding: 1px 16px;
+}
+
+div.content{
+	background-color: rgba(0,0,0,0.7);
+    background-size: cover;
+}
+
+p{
+	color: white;
+	text-align: justify;
+	font-family: georgia;
+}
+
+h2.title{
+	color: white;
+	font-style: italic;
+	font-family: georgia;
+}
+
+img.pics{
+	width: 400px;
+    height: 300px;
+}
+a.links{
+	color: #89CEFF;
+}
+
+h2.h2{
+	color: white;
+	font-family: georgia;
+	font-size: 40px;
+}
+
+ol{
+	color: white;
+	font-family: georgia;
+	text-align: justify;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 300px;
+    margin: auto;
+	display: grid;
+}
+
+img.spot {
+    width: 300px;
+    height: 150px;	
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+div.parent{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+img.videoThumb {
+    max-width: 100%;
+    height: auto;
+}
+.video {
+	background-color: rgba(0,0,0,0.7);
+    padding-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    width: 23%; /* Thumbnails 4 across */
+    margin: 1%;
+    float: left;
+	padding-top: 15px;
+}
+.video figure {
+    height: 0;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+
+.video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+}
+h2.videoTitle{
+	color: white;
+	text-align: center;
+	font-family: georgia;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 20px;
+	height: 40px;
+}
+
+a.text{
+	color: white;
+	text-decoration: none;
+}
+
+p.copyright{
+	font-style: italic;
+	color: white;
+	float: right;
+	padding-right: 30px;
+	font-size: 9px;
+}
+
+a.text:hover:not(.active) {
+	color: green;
+}
+
+img.icon{
+	size: 10px;
+}
+	
+/* FOR VIDEO GALLERY */	
+	
+/* Media Queries - This is the responsive grid. */
+
+@media (max-width: 1024px) {
+.video {
+	width: 31.333%; /* Thumbnails 3 across */
+	}
+}
+
+@media (max-width: 600px) {
+.video {
+    width: 48%; /* Thumbnails 2 across */
+    }
+}
+
+/* Media Queries - This is the responsive grid. */
+
+@media (max-width: 1024px) {
+.video {
+    width: 31.333%; /* Thumbnails 3 across */
+    }
+}
+
+@media (max-width: 600px) {
+.video {
+    width: 48%; /* Thumbnails 2 across */
+    }
+}
+
+@media (max-width: 360px) {
+.video {
+    display: block;
+    width: 96%; /* Single column view. */
+    margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+    float: none;
+    }
+}
+
+/* These are my preferred rollover styles. */
+
+.video img {
+	width: 100%;
+    opacity: 1;
+}
+
+.video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+}
+
+
+/* FOR HEADER*/
+
+@media screen and (max-width: 500px) {
+.header{
+    float: none;
+    display: block;
+    text-align: left;
+	}
+}
+
+/* FOR SIDEBAR */
+
+@media screen and (max-width: 700px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+    text-align: center;
+    float: none;
+	}
+}
+
+/* FOR SCREEN */
+
+@media only screen and (max-width:800px) {
+/* For tablets: */
+.main {
+    width: 80%;
+    padding: 0;
+}
+.right {width: 100%;}
+}
+@media only screen and (max-width:500px) {
+/* For mobile phones: */
+.menu, .main, .right {
+	width: 100%;
+	}
+}

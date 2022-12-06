@@ -1,0 +1,140 @@
+
+/* for body */
+body, html {
+  margin: 0;
+  font-family:georgia;
+  background-image: url("phil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+/* designing form */
+form {
+	border: 3px solid #f1f1f1;
+	margin: auto;
+	width: 600px;
+	height: 500px;
+	background-color: white;
+}
+
+/* for form border*/
+div.border {
+	border: 5px solid white;
+	margin: auto;
+	width: 620px;
+	height: 560px;
+	margin-top: 20px;
+	
+}
+
+/* designing heading */
+h2 {
+	font-size: 20px;
+	font-size: 20px;
+	margin: 15px;
+	margin-top: 10px;
+	font-style:italic;
+	background-color: rgba(0,0,0,0.7);
+    background-size: cover;
+	text-align: center;
+	color: white;
+	
+}
+
+/* for inputs */
+input[type=text], input[type=password], input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* designing buttons */
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.cancelbutton {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+a.cancel{
+	color: white;
+	text-decoration: none;
+}
+
+/* designing images */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 20%;
+	border-radius: 50%;
+	border-color: black;
+	border: solid;
+}
+ /* for container */
+.container {
+	padding: 14px 10px;
+}
+
+/* for password */
+span.password {
+	float: right;
+	padding-top: 16px;
+}
+
+/* for footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: left;
+   padding-left: 15px;
+   padding-top: 20px;
+   height: 40px;
+
+}
+
+a.text{
+	color: white;
+	text-decoration: none;
+}
+
+p.copyright{
+	font-style: italic;
+	color: white;
+	float: right;
+	padding-right: 30px;
+	font-size: 9px;
+}
+
+a.text:hover:not(.active) {
+	color: green;
+}
